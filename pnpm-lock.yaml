@@ -13,8 +13,8 @@ importers:
         version: 1.8.11
     devDependencies:
       '@playwright/test':
-        specifier: ^1.48.2
-        version: 1.48.2
+        specifier: 1.49.0-alpha-2024-11-09
+        version: 1.49.0-alpha-2024-11-09
       '@types/node':
         specifier: ^22.9.0
         version: 22.9.0
@@ -375,8 +375,8 @@ packages:
   '@nothing-but/utils@0.12.1':
     resolution: {integrity: sha512-1qZU1Q5El0IjE7JT/ucvJNzdr2hL3W8Rm27xNf1p6gb3Nw8pGnZmxp6/GEW9h+I1k1cICxXNq25hBwknTQ7yhg==}
 
-  '@playwright/test@1.48.2':
-    resolution: {integrity: sha512-54w1xCWfXuax7dz4W2M9uw0gDyh+ti/0K/MxcCUxChFh37kkdxPdfZDw5QBbuPUJHr1CiHJ1hXgSs+GgeQc5Zw==}
+  '@playwright/test@1.49.0-alpha-2024-11-09':
+    resolution: {integrity: sha512-JVJxbb9tJQAXpWKwazgtLAfUO/35bJobTR7tcKa3ih9lBpqv7MtySW7xiL4UhHD4z+nrfWUhd92NKAaaWUoJWg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -674,13 +674,13 @@ packages:
   picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
-  playwright-core@1.48.2:
-    resolution: {integrity: sha512-sjjw+qrLFlriJo64du+EK0kJgZzoQPsabGF4lBvsid+3CNIZIYLgnMj9V6JY5VhM2Peh20DJWIVpVljLLnlawA==}
+  playwright-core@1.49.0-alpha-2024-11-09:
+    resolution: {integrity: sha512-X6gdRFbjKCqTxvZTSFSydJrumP77CnS0wDzzAP+eI9FOYTz5W6xDg1QS7g0TDcYfx0QqPdBcT9uQ43HZv7z35w==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.48.2:
-    resolution: {integrity: sha512-NjYvYgp4BPmiwfe31j4gHLa3J7bD2WiBz8Lk2RoSsmX38SVIARZ18VYjxLjAcDsAhA+F4iSEXTSGgjua0rrlgQ==}
+  playwright@1.49.0-alpha-2024-11-09:
+    resolution: {integrity: sha512-Dm4JikQTQiktIpLDXgi2t+OGOVn4uNL2fo7d4uDIIGqgNKhJc8T704c1370VXqSko04tMcItGTj7XQqdMzn6+g==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1118,9 +1118,9 @@ snapshots:
 
   '@nothing-but/utils@0.12.1': {}
 
-  '@playwright/test@1.48.2':
+  '@playwright/test@1.49.0-alpha-2024-11-09':
     dependencies:
-      playwright: 1.48.2
+      playwright: 1.49.0-alpha-2024-11-09
 
   '@rollup/rollup-android-arm-eabi@4.9.5':
     optional: true
@@ -1418,11 +1418,11 @@ snapshots:
 
   picocolors@1.0.0: {}
 
-  playwright-core@1.48.2: {}
+  playwright-core@1.49.0-alpha-2024-11-09: {}
 
-  playwright@1.48.2:
+  playwright@1.49.0-alpha-2024-11-09:
     dependencies:
-      playwright-core: 1.48.2
+      playwright-core: 1.49.0-alpha-2024-11-09
     optionalDependencies:
       fsevents: 2.3.2
 
