@@ -1,16 +1,19 @@
-import type { Component } from "solid-js";
+import { type JSX } from "solid-js";
+import { Router } from "@solidjs/router";
 
-const App: Component = () => (
-  <div>
-    Select a file!
-    <input
-      id="selectafile"
-      type="file"
-      onChange={(e) => {
-        console.log("file changed!", e);
-      }}
-    />
-  </div>
-);
-
-export default App;
+export default function App(): JSX.Element {
+  return (
+    <Router root={(props) => <main>{props.children}</main>}>
+      {[
+        {
+          path: "/",
+          component: () => "This is Home",
+        },
+        {
+          path: "/fileupload",
+          component: () => "This is File Upload",
+        },
+      ]}
+    </Router>
+  );
+}

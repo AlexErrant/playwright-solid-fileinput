@@ -2,6 +2,14 @@ import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
 // import devtools from 'solid-devtools/vite';
 
+const serverOptions = {
+  port: 3000,
+  strictPort: true,
+  headers: {
+    "Cross-Origin-Opener-Policy": "same-origin",
+  },
+};
+
 export default defineConfig({
   plugins: [
     /* 
@@ -11,9 +19,9 @@ export default defineConfig({
     // devtools(),
     solidPlugin(),
   ],
-  server: {
-    port: 3000,
-  },
+  server: serverOptions,
+  preview: serverOptions,
+
   build: {
     target: 'esnext',
   },
