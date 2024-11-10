@@ -3,7 +3,14 @@ import { Router } from "@solidjs/router";
 
 export default function App(): JSX.Element {
   return (
-    <Router root={(props) => <main>{props.children}</main>}>
+    <Router
+      root={(props) => (
+        <>
+          <iframe src="https://app-ugc.pages.dev"></iframe>
+          <main>{props.children}</main>
+        </>
+      )}
+    >
       {[
         {
           path: "/",
