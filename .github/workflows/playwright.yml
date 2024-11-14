@@ -1,9 +1,9 @@
 name: Playwright Tests
 on:
   push:
-    branches: [ main, master, firefox_cert, chrome_cert, use_ignore_https, webServer_ignore_https ]
+    branches: [ main, master, firefox_cert, chrome_cert, use_ignore_https, webServer_ignore_https, porque_no_los_dos ]
   pull_request:
-    branches: [ main, master, firefox_cert, chrome_cert, use_ignore_https, webServer_ignore_https ]
+    branches: [ main, master, firefox_cert, chrome_cert, use_ignore_https, webServer_ignore_https, porque_no_los_dos ]
 jobs:
   test:
     timeout-minutes: 60
