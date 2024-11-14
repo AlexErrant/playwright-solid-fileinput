@@ -23,8 +23,8 @@ jobs:
     - name: Run `playwright test`, install cert, then run `playwright test` again
       shell: bash
       run: |
-        echo "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ demoing that playwright fails with all 3 browsers before cert installed"
-        NODE_EXTRA_CA_CERTS=$(mkcert -CAROOT)/rootCA.pem DEBUG=pw:webserver pnpm exec playwright test || true
+        # echo "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ demoing that playwright fails with all 3 browsers before cert installed"
+        # NODE_EXTRA_CA_CERTS=$(mkcert -CAROOT)/rootCA.pem DEBUG=pw:webserver pnpm exec playwright test || true
 
         echo "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ installing certs"
         sudo apt install libnss3-tools
